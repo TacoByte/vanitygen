@@ -390,9 +390,9 @@ main(int argc, char **argv)
 			scriptaddrtype = -1;
 			break;
 		case 'T':
-			addrtype = 111;
-			privtype = 239;
-			scriptaddrtype = 196;
+			addrtype = 66;
+			privtype = 76;
+			scriptaddrtype = 3;
 			break;
 		case 'X':
 			addrtype = atoi(optarg);

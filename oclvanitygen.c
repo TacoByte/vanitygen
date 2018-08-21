@@ -58,7 +58,7 @@ usage(const char *name)
 "-k            Keep pattern and continue search after finding a match\n"
 "-1            Stop after first match\n"
 "-N            Generate namecoin address\n"
-"-T            Generate bitcoin testnet address\n"
+"-T            Generate Tao address\n"
 "-X <version>  Generate address with the given version\n"
 "-e            Encrypt private keys, prompt for password\n"
 "-E <password> Encrypt private keys with <password> (UNSAFE)\n"
@@ -145,8 +145,8 @@ main(int argc, char **argv)
 			privtype = 180;
 			break;
 		case 'T':
-			addrtype = 111;
-			privtype = 239;
+			addrtype = 66;
+			privtype = 76;
 			break;
 		case 'X':
 			addrtype = atoi(optarg);

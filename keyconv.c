@@ -183,7 +183,7 @@ main(int argc, char **argv)
 
 	switch (privtype) {
 	case 128: addrtype = 0; break;
-	case 239: addrtype = 111; break;
+	case 239: addrtype = 66; break;
 	default:  addrtype = 0; break;
 	}
 

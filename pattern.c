@@ -1388,14 +1388,16 @@ vg_prefix_context_add_patterns(vg_context_t *vcp,
 
 	if (!npfx && impossible) {
 		const char *ats = "bitcoin", *bw = "\"1\"";
+		fprintf(stderr,
+			"Hint: valid %s addresses begin with %d\n", ats, vcpp->base.vc_addrtype);
 		switch (vcpp->base.vc_addrtype) {
 		case 5:
 			ats = "bitcoin script";
 			bw = "\"3\"";
 			break;
-		case 111:
-			ats = "testnet";
-			bw = "\"m\" or \"n\"";
+		case 66:
+			ats = "Tao";
+			bw = "\"T\"";
 			break;
 		case 52:
 			ats = "namecoin";
